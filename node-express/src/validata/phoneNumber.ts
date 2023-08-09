@@ -2,7 +2,7 @@ import { checkString } from "./string";
 
 const phoneNumberPartRegex = /^\d{4}$/;
 
-export function cheakPhoneNumber(input: unknown): input is string {
+export function checkPhoneNumber(input: unknown): input is string {
   if (!checkString(input)) return false;
 
   const [localNumber, frontNumber, backNumber] = input.split("-");
@@ -13,5 +13,5 @@ export function cheakPhoneNumber(input: unknown): input is string {
   return true;
 }
 
-const result = cheakPhoneNumber("010-4223-5650");
+const result = checkPhoneNumber("010-4223-5650");
 console.log(result);
