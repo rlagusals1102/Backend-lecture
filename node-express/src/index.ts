@@ -1,10 +1,10 @@
-import { connectDB } from "./db";
-import { startServer } from "./server";
+import { connectDB } from './db'
+import { startServer } from './server'
 
-async function main(): Promise<void> {
-  await connectDB();
-  await startServer();
-  console.log("Service is ready!");
+async function main (): Promise<void> {
+  await connectDB()
+  await startServer()
+  console.log('Applicaiton is ready!')
 }
 
-main().catch(console.error);
+main().catch(console.error)
