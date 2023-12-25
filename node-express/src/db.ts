@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-const password = "mXUFpUa7a6LAGDki";
+const password = "";
 const rawConnectString =
   "mongodb+srv://rlagusals1102:<password>@cluster0.opqtw3j.mongodb.net/?retryWrites=true&w=majority";
 
@@ -12,4 +12,3 @@ async function connectDB(): Promise<void> {
 }
 
 export { connectDB };
-//Mongo Atlas New : mXUFpUa7a6LAGDki
